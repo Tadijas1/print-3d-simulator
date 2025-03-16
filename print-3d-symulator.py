@@ -5,9 +5,7 @@ import random
 import os
 from time import sleep
 
-zmienne = open('aprint_3d_zmienne.txt', 'r')
 lista_zmiennych = []
-f = zmienne.readlines()
 
 def salon():
     global czy
@@ -413,6 +411,8 @@ while(1==1):
         salon()
 
     elif a=='2':
+        zmienne = open('aprint_3d_zmienne.txt', 'r')
+        f = zmienne.readlines()
         for line in f:
             lista_zmiennych.append(line.strip())
         print(lista_zmiennych)
